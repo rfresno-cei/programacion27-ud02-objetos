@@ -1,13 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Alumno a1 = new Alumno("Pepito", "Pepítez");
-        System.out.println(a1);
-        Alumno a2 = new Alumno("Laurita", "López", 5.7, 7.8, 9.5);
-        System.out.println(a2);
-        Profesor p = new Profesor("Pepe García", 2015);
-        System.out.println(p);
-        System.out.println(p.getAnyos());
-        Curso c = new Curso("DAW", 1, a2, p);
-        System.out.println(c);
+        Jugador j1 = new Jugador("Ferrancito", 10, 2005);
+        Jugador j2 = new Jugador("Ronaldito", 9, 2001);
+        Jugador j3 = new Jugador("Pizarrito", 8, 2006);
+        Equipo e = new Equipo("CEI FC", 2026, j1, j2, j3);
+        System.out.println(e);
+        System.out.println(e.getAnyoCentenario());
+        e.getDetalles();
     }
 }
